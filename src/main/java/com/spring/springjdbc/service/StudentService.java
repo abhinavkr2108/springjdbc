@@ -16,8 +16,8 @@ public class StudentService {
         repo.addStudent(student);
     }
 
-    public List<Student> getStudents(Student student) {
+    public List<Student> getStudents() {
         System.out.println("fetching students...");
-        return repo.findAll(student);
+        return repo.findAll();
     }
 }

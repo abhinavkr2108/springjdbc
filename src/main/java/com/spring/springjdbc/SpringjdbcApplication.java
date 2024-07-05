@@ -22,7 +22,7 @@ public class SpringjdbcApplication {
 		StudentService service = context.getBean(StudentService.class);
 		service.addStudent(student);
 
-		List<Student> studentList = service.getStudents(student);
+		List<Student> studentList = service.getStudents();
 		System.out.println(studentList);
 	}
 
